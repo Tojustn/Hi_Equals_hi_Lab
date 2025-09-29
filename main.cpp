@@ -1,7 +1,12 @@
 #include <iostream>
+#include <string>
 
-#include "src/hello.hpp"
+#include "src/strcmp.hpp"
 
 int main() {
-  // Your driver program goes here
+  std::string str1{"main"};
+  std::string str2{"Main"};
+
+  int result = strcmp_case_insensitive(str1, str2);
+  std::cout << "Comparison result: " << result << std::endl;
 }
